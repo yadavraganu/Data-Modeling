@@ -1,20 +1,19 @@
+### What are Facts?
+Facts are the measurable, quantitative data in a dimensional model that represent business events or transactions. Facts are the numeric values that are analyzed and aggregated for business intelligence and reporting purposes.
+Facts are numeric measurements that capture the essence of business transactions. They are stored in fact tables and are analyzed in combination with dimensions to provide business insights.
 
-### What are Dimensions?
-Dimensions are the contextual elements in a dimensional model that provide the "who, what, where, when, why, and how" for business measurements (facts).
-Dimensions are attributes that describe facts. They provide context and meaning to the numeric measurements stored in fact tables.
+**Examples of Facts:**
+- **Sales Facts** - sales amount, quantity sold, discount given
+- **Revenue Facts** - total revenue, revenue by product, revenue by region
+- **Inventory Facts** - units in stock, stock value, reorder quantities
+- **Performance Facts** - units produced, time taken, cost incurred
 
-**Examples of Dimensions:**
-- **Time Dimension** - dates, months, quarters, years
-- **Customer Dimension** - customer names, segments, geography
-- **Product Dimension** - product names, categories, pricing
-- **Location Dimension** - stores, regions, countries
-
-### Dimension Characteristics
+### Fact Characteristics
 
 | Characteristic | Description |
 |---|---|
-| **Data Type** | Descriptive, textual, categorical |
-| **Cardinality** | Can range from low to high |
-| **Relationships** | Link to fact tables via foreign keys |
-| **Denormalization** | Often denormalized for query performance |
-| **Stability** | Relatively stable; changes tracked via slowly changing dimensions |
+| **Data Type** | Numeric, quantitative, measurable |
+| **Cardinality** | Typically high; grows with business transactions |
+| **Relationships** | Link to dimension tables via foreign keys |
+| **Aggregation** | Highly aggregable for business analysis |
+| **Granularity** | Defined at a specific level of detail (e.g., transaction, daily summary) |
