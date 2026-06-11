@@ -1,10 +1,10 @@
-# Dimensional Modeling
+## Dimensional Modeling
 
 The dimensional model of a business process is made up of two components: measurements and their context, known as facts and dimensions. These two simple concepts—measurement and context—are the foundation of dimensional design.
 
 Implemented in a relational database, the dimensional model is called a **star schema**. Implemented in a multidimensional database, it is known as a **cube**.
 
-## Information Systems Categories
+### Information Systems Categories
 
 Information systems fall into two major categories:
 - Those that **support the execution of business processes** (Operational Systems)
@@ -12,7 +12,7 @@ Information systems fall into two major categories:
 
 An **operational system** supports the execution of a business process, while an **analytic system** supports the evaluation of the process. An operational system manages day-to-day business transactions, while an analytical system evaluates historical data to drive long-term strategic decisions.
 
-## Comparison: Operational vs Analytical Systems
+### Comparison: Operational vs Analytical Systems
 
 | Feature | Operational System | Analytical System |
 |---|---|---|
