@@ -1,10 +1,19 @@
-In a dimensional design, measurements are called facts, and context descriptors are called
-dimensions. Every dimensional design sorts information requirements into these categories
-Dimensions serve as “filters,” or “query
-predicates.A dimensional design organizes facts and dimensions for storage in a database. It is common
-for a set of dimensions to share relationships to one another, independent of facts. These
-are grouped together in a single table to reflect their natural clustering. Similarly, facts that
-are available at the same level of detail are grouped together
-Sometimes, “dimension table” is simply
-shortened to “dimension.” This may give rise to confusion, since that word can also describe
-the individual columns
+### What are Dimensions?
+Dimensions are the contextual elements in a dimensional model that provide the "who, what, where, when, why, and how" for business measurements (facts).
+Dimensions are attributes that describe facts. They provide context and meaning to the numeric measurements stored in fact tables.
+
+**Examples of Dimensions:**
+- **Time Dimension** - dates, months, quarters, years
+- **Customer Dimension** - customer names, segments, geography
+- **Product Dimension** - product names, categories, pricing
+- **Location Dimension** - stores, regions, countries
+
+### Dimension Characteristics
+
+| Characteristic | Description |
+|---|---|
+| **Data Type** | Descriptive, textual, categorical |
+| **Cardinality** | Can range from low to high |
+| **Relationships** | Link to fact tables via foreign keys |
+| **Denormalization** | Often denormalized for query performance |
+| **Stability** | Relatively stable; changes tracked via slowly changing dimensions |
