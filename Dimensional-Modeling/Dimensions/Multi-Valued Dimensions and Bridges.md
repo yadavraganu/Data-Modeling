@@ -18,8 +18,6 @@ A **multi-valued attribute** occurs when a single dimension row needs to capture
 
 In both scenarios, a traditional star schema configuration is insufficient to accurately model these complex relationships without introducing data anomalies or redundancy.
 
----
-
 ## Approach 1: Multiple Foreign Keys in Fact Tables
 
 ### Overview
@@ -130,8 +128,6 @@ FACT_SALES
 - Performance-critical scenarios with very specific access patterns
 - Backward compatibility with legacy systems
 
----
-
 ## Approach 2: Bridge Tables (Recommended)
 
 ### Overview
@@ -196,8 +192,6 @@ SALES_CUSTOMER_BRIDGE
 - When semantic information about relationships is important
 - Long-term, evolving data models
 
----
-
 ## Comparison Matrix
 
 | Aspect | Multiple Keys | Bridge Tables |
@@ -211,8 +205,6 @@ SALES_CUSTOMER_BRIDGE
 | **Learning Curve** | Easy | Moderate |
 | **Performance** | Good for small counts | Optimal for all cases |
 | **Schema Stability** | Low (needs ALTER) | High (flexible) |
-
----
 
 ## Best Practices
 
