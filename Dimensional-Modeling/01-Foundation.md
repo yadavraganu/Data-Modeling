@@ -14,7 +14,7 @@ This module covers the ideas that everything else in the Kimball approach builds
 8. Common myths and misconceptions
 9. Self-check questions
 
----
+<br></br>
 
 ## 1. Purpose of DW/BI and the Kimball, Inmon, and Data Vault Perspectives
 
@@ -51,7 +51,7 @@ The DW/BI system is not just a database. It is a combination of data, ETL proces
 * In both Kimball and Inmon approaches, the data that business users query ends up dimensional. The disagreement is mainly about whether a normalized enterprise warehouse must come first and what role it plays.
 * The old "bottom-up vs. top-down" labels oversimplify. Kimball's approach is top-down in planning (an enterprise bus matrix and shared conformed dimensions) and incremental in delivery.
 
----
+<br></br>
 
 ## 2. The Kimball DW/BI Architecture
 
@@ -103,7 +103,7 @@ Everything business users touch to analyze data:
 * **Hub-and-spoke (Inmon):** a normalized EDW feeds dimensional marts.
 * **Hybrid:** a normalized or Data Vault integration layer feeds the Kimball presentation area.
 
----
+<br></br>
 
 ## 3. Dimensional Modelling vs. 3NF/ER Modelling
 
@@ -126,7 +126,7 @@ Key points:
 * ER modelling is useful in the ETL staging area and in operational systems, but it is not what users should query.
 * A 3NF model can be converted to a dimensional model by applying the four-step process: choose a business process, declare the grain, identify dimensions, and identify facts.
 
----
+<br></br>
 
 ## 4. Star Schema, Snowflake Schema, and OLAP Cubes
 
@@ -164,7 +164,7 @@ Key points:
 | Ease of use | High | Medium | High (for supported queries) |
 | Typical role | Core presentation layer | Exception | Performance and analytics layer |
 
----
+<br></br>
 
 ## 5. Business Process Orientation
 
@@ -180,7 +180,7 @@ Key points:
 
 Example: a retailer's sales, inventory, and purchasing processes all use the Date, Product, and Store dimensions. Because those dimensions are conformed, the retailer can compare sales and inventory by product in the same report.
 
----
+<br></br>
 
 ## 6. The Kimball Lifecycle
 
@@ -229,7 +229,7 @@ Key ideas:
 * Business requirements **drive** all downstream decisions: architecture, models, and BI applications.
 * The lifecycle is a flexible roadmap, not a rigid waterfall, and can be combined with agile practices.
 
----
+<br></br>
 
 ## 7. Requirements Gathering
 
@@ -269,7 +269,7 @@ Good requirements are the foundation of a successful dimensional model. The goal
 * Agree the scope of the first iteration with the sponsor and stakeholders.
 * Document **success criteria**, so that you can show the result delivered what the business needed.
 
----
+<br></br>
 
 ## 8. Common Myths and Misconceptions
 
@@ -283,7 +283,7 @@ Good requirements are the foundation of a successful dimensional model. The goal
 | Normalized models are always more flexible | Normalized models are flexible for transactions, but dimensional models are designed to handle changes to analytic requirements gracefully. |
 | Dimensional modelling is only for relational databases | Dimensional design applies to relational and multidimensional (OLAP) implementations, and to modern columnar and cloud platforms. |
 
----
+<br></br>
 
 ## 9. Self-Check Questions
 
@@ -300,7 +300,7 @@ Good requirements are the foundation of a successful dimensional model. The goal
 11. Why should you avoid asking users "what data do you want"?
 12. How is an enterprise bus matrix built from requirements?
 
----
+<br></br>
 
 ## Key Terms
 
