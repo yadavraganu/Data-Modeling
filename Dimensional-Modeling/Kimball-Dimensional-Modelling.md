@@ -1,15 +1,5 @@
 # Kimball Dimensional Modelling
 
-A practical, end-to-end reference to dimensional modelling in the Kimball style: concepts, fact and dimension techniques, slowly changing dimensions, integration through conformed dimensions, loading, querying, pitfalls and worked examples.
-
-**Source and scope.** The structure follows the Kimball Group's *Kimball Dimensional Modeling Techniques* summary (September 2013), which condenses *The Data Warehouse Toolkit, Third Edition* by Ralph Kimball and Margy Ross. This guide is a paraphrase and extension, not a reproduction: every technique in that summary is covered, then expanded with SQL, sample data, decision rules and modern-platform notes. Sections 12 to 14 go beyond the summary (loading, physical design, modern stack). For authoritative detail, read the book.
-
-**Conventions used in examples**
-
-- SQL is ANSI/PostgreSQL-flavoured. Adapt identity columns, date functions and `MERGE` syntax to your platform.
-- Tables are prefixed `dim_`, `fact_`, `bridge_`, `agg_`. Surrogate keys end in `_key`; source (natural) keys are named for the business identifier (`product_number`, `customer_number`).
-- `:load_ts` and similar names stand for values supplied by the load process.
-
 ## Contents
 
 1. [What Kimball Modelling Is](#1-what-kimball-modelling-is)
