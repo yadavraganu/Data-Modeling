@@ -36,9 +36,9 @@ flowchart LR
   C --> D[BI layer: reports, dashboards, semantic layer, OLAP cubes]
 ```
 
-- **ETL back room**: staging and transformation. Not meant for business users.
-- **Presentation area**: the dimensional models (star schemas, OLAP cubes). This is what users query, so it must be **dimensional, atomic where possible, and organised around business processes with shared conformed dimensions** (the *bus architecture*, section 5).
-- **BI layer**: tools and applications that read the presentation area.
+- **ETL Back Room**: staging and transformation. Not meant for business users.
+- **Presentation Area**: the dimensional models (star schemas, OLAP cubes). This is what users query, so it must be dimensional, atomic where possible, and organised around business processes with shared conformed dimensions (the *bus architecture*).
+- **BI Layer**: tools and applications that read the presentation area.
 
 The terms "back room" and "presentation area" come from Kimball's wider lifecycle books rather than the techniques summary, but they describe the architecture the techniques assume.
 
@@ -78,7 +78,7 @@ The terms "back room" and "presentation area" come from Kimball's wider lifecycl
 | Business rules | Applied while loading | Applied while loading | Pushed downstream |
 | Typical layer | Presentation | Integration | Integration/raw |
 
-These are complementary. A common modern pattern is **Data Vault or a persistent staging layer for integration and history, with Kimball star schemas as the presentation layer** (see the Data Vault guide, section 12, and section 14 here).
+These are complementary. A common modern pattern is **Data Vault or a persistent staging layer for integration and history, with Kimball star schemas as the presentation layer**.
 
 ## 2. Fundamental Concepts
 
