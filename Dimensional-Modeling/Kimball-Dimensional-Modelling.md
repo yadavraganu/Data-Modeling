@@ -1906,16 +1906,6 @@ Pre-joined wide tables are popular for BI performance and simplicity. They are b
 - **Transaction fact table**: fact table with one row per event.
 - **Type 2 housekeeping columns**: row effective date, row expiration date, current row indicator.
 
-## 19. Learning Path and Further Reading
-
-1. Read *The Data Warehouse Toolkit, Third Edition* (Ralph Kimball and Margy Ross, 2013), the book the techniques summary is drawn from. It works through industry case studies (retail, inventory, orders, finance, healthcare, insurance, web) that show the techniques in context.
-2. For the project and architecture side, read *The Data Warehouse Lifecycle Toolkit* (Kimball and colleagues, 2nd edition, 2008); for the ETL back room, *The Data Warehouse ETL Toolkit* (Kimball and Caserta, 2004).
-3. Practise with a small domain: pick one business process, write the four-step declarations, then build the bus matrix with a second process to force conformed dimensions.
-4. Implement a type 2 customer dimension with a surrogate key pipeline, and test it with the checks in 12.5, including a late arriving fact.
-5. Build an accumulating snapshot for a pipeline you know (orders, claims, tickets) and an aggregate with a shrunken dimension.
-6. Add a type 7 as-was/as-is pair of views and demonstrate the difference to a business user with real numbers.
-7. If you also use Data Vault, derive a dimension and a fact from a vault with a PIT table, and compare the effort.
-
 ## Summary
 
 Kimball modelling turns business processes into **facts at a declared grain, surrounded by descriptive, conformed dimensions**. Declare the grain first and keep it atomic; give every dimension a warehouse-owned surrogate key and descriptive text attributes; choose slowly changing dimension behaviour per attribute with the business; integrate through the **bus matrix and conformed dimensions** so each process plugs into the same shared context; compare processes by drilling across, never by joining fact tables; and keep the model honest with audit dimensions, error events and automated tests. Do it one business process at a time, and the warehouse stays both simple for users and fast to query.
