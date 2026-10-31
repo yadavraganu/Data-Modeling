@@ -20,7 +20,6 @@
 16. [Design Review Checklist](#16-design-review-checklist)
 17. [Technique Selection Cheat Sheet](#17-technique-selection-cheat-sheet)
 18. [Glossary](#18-glossary)
-19. [Learning Path and Further Reading](#19-learning-path-and-further-reading)
 
 ## 1. What Kimball Modelling Is
 
